@@ -21,8 +21,9 @@ char *ft_strcat(char *dest, char *src)
 
 int main(int argc, char const *argv[])
 {
-    char dest[100] = "Daniel Lindo ";
+    char dest[100] = "Daniel";
     char src[100] = "Marques";
     printf("%s\n", ft_strcat(dest, src));
+    printf("%s\n", strcat(dest, src));
     return (0);
 }

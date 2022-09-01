@@ -6,7 +6,6 @@ char *ft_strncat(char *dest, char *src, int n)
 {
     int i;
     int j;
-    int k;
     i = 0;
     j = 0;
     while (dest[i] != '\0')
@@ -24,6 +23,7 @@ int main(int argc, char const *argv[])
 {
     char dest[20] = "Daniel ";
     char src[10] = "Marques";
-    printf("%s\n", ft_strncat(dest, src, 7));
+    printf("%s\n", ft_strncat(dest, src, 6));
+    printf("%s\n", strncat(dest, src, 6));
     return 0;
 }

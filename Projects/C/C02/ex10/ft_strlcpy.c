@@ -28,11 +28,10 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	return i;
 }
 
-
-int main(int argc, char const *argv[])
+/*int main(int argc, char const *argv[])
 {
     char dest[] = "f/h39rhfi";
     char str[] = "12iqiu";
     printf("%d\n", ft_strlcpy(dest, str, 10));
     return 0;
-}
+}*/
