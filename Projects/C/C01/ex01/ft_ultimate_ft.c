@@ -14,3 +14,22 @@ void	ft_ultimate_ft(int *********nbr)
 {
 	*********nbr = 42;
 }
+
+/*
+int main(int argc, char const *argv[])
+{
+    int a;
+    int *pt_a = &a;
+    int **pt_pt_a = &pt_a;
+    int ***pt_pt_pt_a = &pt_pt_a;
+    int ****pt_pt_pt_pt_a = &pt_pt_pt_a;
+    int *****pt_pt_pt_pt_pt_a = &pt_pt_pt_pt_a;
+    int ******pt_pt_pt_pt_pt_pt_a = &pt_pt_pt_pt_pt_a;
+    int *******pt_pt_pt_pt_pt_pt_pt_a = &pt_pt_pt_pt_pt_pt_a;
+    int ********pt_pt_pt_pt_pt_pt_pt_pt_a = &pt_pt_pt_pt_pt_pt_pt_a;
+    int *********pt_pt_pt_pt_pt_pt_pt_pt_pt_a = &pt_pt_pt_pt_pt_pt_pt_pt_a;
+    ft_ultimate_ft(pt_pt_pt_pt_pt_pt_pt_pt_pt_a); 
+    printf("%i\n", a);
+    return 0;
+}
+*/

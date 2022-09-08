@@ -36,8 +36,3 @@ void	ft_putnbr(int nb)
 	ft_putchar(nb % 10 + 48);
 }
 
-int main(int argc, char const *argv[])
-{
-	ft_putnbr(1009809);
-	return 0;
-}

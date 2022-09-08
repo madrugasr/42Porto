@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 char	*ft_strlowcase(char *str)
 {
 	int	i;
@@ -23,7 +21,7 @@ char	*ft_strlowcase(char *str)
 			str[i] = str[i] + 32;
 		i++;
 	}
-	return str;
+	return (str);
 }
 
 /*

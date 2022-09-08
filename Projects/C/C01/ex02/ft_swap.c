@@ -18,3 +18,17 @@ void	ft_swap(int *a, int *b)
 	*a = *b;
 	*b = tmp;
 }
+
+/*
+int main(int argc, char const *argv[])
+{    
+    int a = 1;
+    int b = 2;
+    //int *pa = &a;
+    //int *pb = &b;
+    printf("A: %d B: %d\n", a, b);
+    ft_swap(&a, &b);
+    printf("A: %d B: %d\n", a, b);
+    return 0;
+}
+*/

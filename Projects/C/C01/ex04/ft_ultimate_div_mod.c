@@ -20,3 +20,15 @@ void	ft_ultimate_div_mod(int *a, int *b)
 	*a = div;
 	*b = mod;
 }
+
+/*
+int main(int argc, char const *argv[])
+{
+    int a = 100;
+    int b = 10;
+    printf("A: %d B: %d\n", a, b);
+    ft_ultimate_div_mod(&a, &b);
+    printf("A: %d B: %d\n", a, b);
+    return 0;
+}
+*/

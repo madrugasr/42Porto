@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 int	ft_str_is_alpha(char *str)
 {
 	int	i;
@@ -26,13 +24,11 @@ int	ft_str_is_alpha(char *str)
 	return (1);
 }
 
-/*
-int main(int argc, char const *argv[])
+/*int main(int argc, char const *argv[])
 {
     char src[] = "Just Dance";
     printf("%d\n", ft_str_is_alpha(src));
     char src1[] = "JustDance";
     printf("%d\n", ft_str_is_alpha(src1));
     return 0;
-}
-*/
+}*/

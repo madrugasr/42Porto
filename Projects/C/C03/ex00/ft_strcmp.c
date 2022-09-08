@@ -1,32 +1,35 @@
-#include <stdio.h>
-#include <unistd.h>
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: danolive <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/09/03 17:06:42 by danolive          #+#    #+#             */
+/*   Updated: 2022/09/03 17:06:46 by danolive         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (s1[i] != '\0' && s2[i] != '\0')
-    {
-        if (s1 == s2)
-            return (0);
-        else if (s1 != s2)
-            return (s1[i] - s2[i]);
-        else if (s1[i] < s2[i])
-            return (-1);
-        else if (s1[i] > s2[i])
-            return (1);
-        i++;
-    }
-    return (1);
+	i = 0;
+	while (s1[i] != '\0' && s2[i] != '\0')
+	{
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+		i++;
+	}
+	return (s1[i] - s2[i]);
 }
 
-int main(int argc, char const *argv[])
+/*
+int main()
 {
-    char s1[] = "aa";
-    char s2[] = "aaaaaaaaaaa";
+    char s1[] = "a";
+    char s2[] = "a";
     printf("%d\n", ft_strcmp(s1, s2));
-    printf("%d\n", strcmp(s1, s2));
     return 0;
 }
+*/

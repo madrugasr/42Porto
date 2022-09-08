@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-
 int	ft_str_is_uppercase(char *str)
 {
 	int	i;
@@ -27,7 +24,6 @@ int	ft_str_is_uppercase(char *str)
 	return (1);
 }
 
-
 /*int main(int argc, char const *argv[])
 {
     char alfhabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -38,4 +34,3 @@ int	ft_str_is_uppercase(char *str)
     printf("%d\n", ft_str_is_uppercase(numbers));
     return 0;
 }*/
-

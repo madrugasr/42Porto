@@ -10,25 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-char *ft_strncpy(char *dest, char *src, unsigned int n)
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
+	unsigned int	i;
 
 	i = 0;
-	while (i < n && src[i] != '\0')
+	while (src[i] != '\0' && i < n)
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
-/*int main(int argc, char const *argv[])
+
+/*
+int main()
 {
-	char dest[9];
-	char src[] = "James Webb";
-	printf("%s\n", ft_strncpy(dest, src, 9));
-	return 0;
-}*/
+    char dest[50];
+    char src[] = "What in Done!";
+	printf("%s\n", ft_strncpy(dest, src, 4));
+    return 0;
+} 
+*/

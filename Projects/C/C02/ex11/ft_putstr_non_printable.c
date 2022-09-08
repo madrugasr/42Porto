@@ -11,39 +11,45 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
-void	ft_putchar(char c)
+void	ft_putchar(unsigned char c)
 {
 	write(1, &c, 1);
 }
 
-void ft_putstr_non_printable(char *str)
+int	is_non_printable(unsigned char c)
 {
-	int i;
+	return (c < 32 || c > 126);
+}
+
+void	print_hex(unsigned char c)
+{
+	char	*base;
+
+	base = "0123456789abcdef";
+	ft_putchar('\\');
+	ft_putchar(base [c / 16]);
+	ft_putchar(base [c % 16]);
+}
+
+void	ft_putstr_non_printable(char *str)
+{
+	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 	{
-		if (str[i] < 32 || str[i] > 126)
-		{
-			ft_putchar('\\');
-			
-			ft_putchar(str[i] / 16 + '0');
-			ft_putchar(str[i] % 16 + '0');
-		}
+		if (is_non_printable(str[i]))
+			print_hex(str[i]);
 		else
-		{
 			ft_putchar(str[i]);
-		}
 		i++;
 	}
 }
 
-int main(int argc, char const *argv[])
-{
-    char a[] = "Oi\nvoce \t esta bem?";
-    ft_putstr_non_printable(a);
-    return 0;
-}
-
+/*
+int main(){
+	char str[] = "Oi\nvoce esta b\nem?";
+	
+	ft_putstr_non_printable(str);
+}*/
