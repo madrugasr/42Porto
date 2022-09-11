@@ -21,13 +21,12 @@ char	*ft_strstr(char *str, char *to_find)
 		return (str);
 	while (str[i])
 	{
-		while (str[i + j] == to_find[j])
+		while (str[i] == to_find[j])
 		{
 			if (to_find[j + 1] == '\0')
 				return (&str[i]);
 			j++;
 		}
-		j = 0;
 		i++;
 	}
 	return (0);
@@ -36,8 +35,8 @@ char	*ft_strstr(char *str, char *to_find)
 /*
 int main()
 {
-    char str[20] = "James Edwin Webb";
-    char to_find[10] = "z";
+    char str[] = "James Edwin Webb";
+    char to_find[] = "E";
     printf("%s\n", ft_strstr(str, to_find));
     return 0;
 }
